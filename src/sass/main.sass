@@ -1,0 +1,130 @@
+*
+	font-size: 10px
+
+.select 
+	position: relative
+	display: block
+	width: 100px
+	height: 40px
+	margin: 10px 10px
+	text-align: center
+	user-select: none
+	*
+		position: relative
+		margin: 0
+		padding: 0
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+		border-color: inherit
+	ul 
+		width: auto
+		height: auto
+		list-style: none
+		padding: 0
+		
+		.close 
+			display: none
+
+		.label 
+			-webkit-transition: .25s 
+			transition: .25s 
+			display: block
+			height: 0
+			line-height: 40px
+			overflow: hidden
+			color: white
+			cursor: pointer
+			
+		.placeholder 
+			width: 100px
+			height: 40px
+			padding: 0 20px
+			vertical-align: middle
+			position: absolute
+			top: 0
+			left: 0
+			color: orange
+			background-color: white
+			border: solid 1px orange
+
+		input 
+			color: inherit
+			font: inherit
+			margin: 0
+			background: transparent
+			outline: none
+			border: none
+			-webkit-appearance: none
+			appearance: none
+			display: none
+
+		.items 
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+			padding-top: 40px
+			.closeLabel
+				width: 100vw
+				height: 100vh
+				position: fixed
+				top: 0
+				left: 0
+				display: none
+				background-color: #000
+				opacity: 0
+			.expand 
+				width: 0
+				height: 40px
+				position: absolute
+				top: 0
+				right: 0			
+
+			.expand:checked+.closeLabel 
+				transition: .25s
+				display: block
+				opacity: .5
+			
+			.expand:checked+.closeLabel+.options .label 
+				height: 40px
+				&:hover
+					background-color: red
+					color: white
+
+			.expand:checked+.closeLabel+.options+.expandLabel 
+				display: none
+
+			.expandLabel 
+				transition: .25s
+				display: block
+				width: 100%
+				height: 40px
+				position: absolute
+				top: 0
+				left: 0
+				cursor: pointer
+
+			ul
+				width: 100%
+				cursor: pointer
+
+				input
+					display: none
+
+				input:checked +.label 
+					height: 40px
+					margin-top: -40px
+
+				.close:checked +.label 
+					height: 0px
+					margin-top: 40px
+
+				.label 
+					display: block
+					height: 0
+					line-height: 40px
+					overflow: hidden
+					color: white
+					cursor: pointer
+					background-color: orange
+

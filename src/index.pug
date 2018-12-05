@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+met(lang="en")
+meta(charset="UTF-8")
+title Document
+
+body
+	p ボタン
+
+.select
+	ul
+		li.items
+			span.label.placeholder 選んでね
+			input.close(type="radio" name="option" id="close")
+			input.expand(type="radio" name="option" id="opener")
+			label.closeLabel(for="close")
+			
+			ul.options
+				li
+					input(type="radio" name="option" id="itemA")
+					label.label(for="itemA") itemA
+				li
+					input(type="radio" name="option" id="itemB")
+					label.label(for="itemB") itemB
+				li
+					input(type="radio" name="option" id="itemC")
+					label.label(for="itemC") itemC
+				li
+					input(type="radio" name="option" id="itemD")
+					label.label(for="itemD") itemD
+			label.expandLabel(for="opener")
+
+
+
+script(src="./script/main.js")

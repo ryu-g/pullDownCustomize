@@ -1,0 +1,25 @@
+{
+  "name": "pulldowncustomize",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "main.js",
+  "dependencies": {
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.15.1"
+  },
+  "scripts": {
+    "dev": "parcel ./src/index.pug --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryu-g/pullDownCustomize.git"
+  },
+  "author": "ryu-g",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryu-g/pullDownCustomize/issues"
+  },
+  "homepage": "https://github.com/ryu-g/pullDownCustomize#readme"
+}
